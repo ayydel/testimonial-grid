@@ -39,7 +39,7 @@ body {
     font-weight: var(--font-wght-mdium);
     min-height: 100vh;
 
-    display: flex;
+    display: grid;
     place-content: center; 
 }
 
@@ -54,7 +54,7 @@ p {
 
 .container {
     max-width: 85%;
-    margin: 3rem auto;
+    margin-inline: auto;
 
     display: grid;
     gap: 1.5rem;
@@ -134,7 +134,6 @@ p {
 /* MEDIA QUERIES */
 @media screen and (min-width: 1024px) {
     .container {
-        height: 50%;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
